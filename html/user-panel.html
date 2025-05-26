@@ -16,23 +16,18 @@
             <button onclick="logout()" id="btn-cerrar">Cerrar Sesion</button>
         </div>
     </div>
-    <!--
-    <div class="loggeduser">
-        <h2 class="nombreUser" id="nombreUsuario">Juan perez perez </h2>
-        <button id="btn-cerrar">Cerrar Sesion</button>
-    </div>
-    -->
+   
     <div id="tarjets-container">
         <h2> Tarjetas</h2>
         <div class="all-tarjets">
-            <!--Tarjetas de prueba-->
+            <!--Tarjetas de prueba. Todas seran generadas de forma dinamica pero por el momento algunas para visualizar-->
             <!--
             Los id seran creados de forma dinamica con un script JS,dicho js recibira el json con
             las consultas nesesarias para general el contenido.
             -->
             <div class="tarjets"> <!--Agregar id para cada terjeta-->
                 <h3 class="h3-b">Bancora</h3>
-                <h3 class="h3-n">2932 1231 4982 1231</h3><!--Agregar de tarjetas-->
+                <h3 class="h3-n">2932 1231 4982 1231</h3><!--Agregar id de tarjetas-->
                 <div class="aux-vencimiento">
                     <label >Vencimiento</label>
                     <br>
@@ -120,14 +115,32 @@
 
 
     <div id="historial-container">
-        <h2>Historial</h2>
+        <h2>Historial de Transacciones</h2>
         <div class="all-historial">
             <div class="tarjetas-historial">
-
+                <h3 class="tipo-transaccion">Deposito</h3> <!--Agregar id en js-->
+                <div class="datos-trans-contenedor">
+                    <label>Monto: $500</label>
+                    <label>Fecha:00/00/0000</label>
+                    <label>Id transaccion:xxxxxxxxxxxxxx</label>
+                    <label>Descripcion:</label>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor molestias explicabo harum iusto adipisci eum accusamus veniam! Dicta eligendi, porro ipsum a nostrum officiis, magnam accusamus, iusto dolorem facilis enim?</p>
+                </div>
             </div>
+            
         </div>
     </div>
 
+
+    <div id="transferencia-container">
+
+    </div>
+
+
+    <!--Borrar al final el siguioente div-->
+    <div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
 
     <!--Scripts-->
     <script>

@@ -142,11 +142,16 @@ html,body{height: 100%; width: 100%;}
 /*Tarjetas individuales Historial*/
 .tarjetas-historial{
     width: 400px;
-    height: 400px;
+    min-width: 300px;
+    height: 200px;
     background-color: #EDF6FA;
     box-shadow: 0 0 3px 1px gray;
+    padding: 10px;
 }
-
+.datos-trans-contenedor{
+    display: flex;
+    flex-direction: column;
+}
 
 
 
