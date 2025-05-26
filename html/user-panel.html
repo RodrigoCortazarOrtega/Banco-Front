@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/user.css">
+</head>
+<body>
+    <div class="loggeduser">
+        <h2 class="nombreUser" id="nombreUsuario">Juan perez perez </h2>
+        <button id="btn-cerrar">Cerrar Sesion</button>
+    </div>
+    <div id="tarjets-container">
+        <h2> Tarjetas</h2>
+        <div class="all-tarjets">
+            <!--Tarjetas de prueba-->
+            <div class="tarjets"> <!--Agregar id para cada terjeta-->
+                <h3 class="h3-b">Bancora</h3>
+                <h3 class="h3-n">2932 1231 4982 1231</h3><!--Numero de tarjetas-->
+                <div class="aux-vencimiento">
+                    <label >Vencimiento</label>
+                    <br>
+                    <label id="vencimiento">03/02/2026</label><!--El id vencimineto por cada tarjeta-->
+                </div>
+                <div class="aux-cvv">
+                    <label>CVV</label><br>
+                    <label class="hovercvv" id="cvv">123</label> <!-- iD diferente por cada tarjeta-->
+                </div>
+                <div class="aux-tarjets">
+                    <h4 class="disponible" id="cantidad">$1500.96</h4><!--id difernte pór cada tarjeta-->
+                    <label>Disponible</label>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+    <div id="historial-container">
+        <h2>Historial</h2>
+    </div>
+</body>
+</html>
