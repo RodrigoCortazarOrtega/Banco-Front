@@ -1,5 +1,5 @@
 <?php
-// Arreglo en PHP
+// Arreglo en PHP. Para simular la respuesta del server en admin-panel
 $usuarios = [
     [
         "id" => 1,

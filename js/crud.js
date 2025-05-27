@@ -2,7 +2,7 @@ const uTabla = document.getElementById("tabla-usuarios");
 
 let usuarios = []; // Declaramos la variable global para almacenar los usuarios
 
-// Fetch al archivo PHP que retorna el JSON
+// Fetch al archivo PHP que retorna el JSON(Por ahora es asi, ya en el backend cambienle la dir a donde solicitara)
 fetch("http://localhost/JavaScript/ProyectosPersonales/Banco/usuario.php")
   .then(response => response.json()/*Json a array */ )
   .then(data => {

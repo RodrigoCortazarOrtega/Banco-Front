@@ -141,8 +141,8 @@ html,body{height: 100%; width: 100%;}
 
 /*Tarjetas individuales Historial*/
 .tarjetas-historial{
-    width: 400px;
-    min-width: 300px;
+    width: 350px;
+    min-width: 200px;
     height: 200px;
     background-color: #EDF6FA;
     box-shadow: 0 0 3px 1px gray;
