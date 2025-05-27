@@ -32,7 +32,7 @@ $tarjetas = [
         "fechaExpiracion" => "2023-01-01",
         "estado" => "Expirada"
     ]
-];
+    ];
 
 
 //Establecer el tipo de contenido a JSON

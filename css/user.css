@@ -136,7 +136,10 @@ html,body{height: 100%; width: 100%;}
 .aux-cvv > label:nth-child(1):hover + br + .hovercvv {
     display: block;
 }
-
+.expiradas{
+    opacity: 0.5;
+    pointer-events: none;
+}
 
 
 /*Tarjetas individuales Historial*/
