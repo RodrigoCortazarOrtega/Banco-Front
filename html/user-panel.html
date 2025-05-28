@@ -160,17 +160,20 @@
         <form method="post" action="#" class="form-transferencia">
             <div>
                 <label>Desde:</label>
-                <input placeholder="Numero de cuenta">
+                <input type="search" placeholder="Numero de cuenta" required>
             </div>
             <div>
                 <label>Hacia:</label>
-                <input placeholder="Numero de cuenta">
+                <input placeholder="Numero de cuenta" required>
             </div>
             <div>
                 <label>Monto:</label>
-                <input placeholder="$00.00">
+                <input placeholder="$00.00" required>
             </div>
-            
+            <div>
+                <label>Descripcion:</label>
+                <input placeholder="..." required>
+            </div>
             <input type="submit" value="Transferir" class="btnTransferir">
         </form>
     </div>
