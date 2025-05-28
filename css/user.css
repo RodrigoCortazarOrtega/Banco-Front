@@ -46,18 +46,19 @@ html,body{height: 100%; width: 100%;}
 }
 #btn-cerrar{
     background-color: red;
-    padding: 4px;
+    padding: 6px;
     color: white;
+    border-radius: 4px;
 }
 
 
-/*Tarjetas e historial*/
+/*Tarjetas e historial y tranferrencia*/
 #tarjets-container,#historial-container{
     background-color: #E6E8E7;
     padding: 4px;
     border-radius: 8px;
 }
-#tarjets-container,#historial-container{
+#tarjets-container,#historial-container,#transferencia-container{
     /*border:1px solid black;*/
     margin: 20px;
 }
@@ -159,6 +160,51 @@ html,body{height: 100%; width: 100%;}
 
 
 
+
+
+
+
+
+
+/*Transferencias*/
+#transferencia-container{
+    display: inline-block;
+    width: 350px;
+    /*border:1px solid red;*/
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 1.5px gray;
+}
+#transferencia-container h2{
+    text-align: center;
+    color: black;
+    background-color: #E6E8E7;
+    padding:7px;
+}
+#transferencia-container form{
+    color: black;
+    background-color: #EDF6FA;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    
+}
+#transferencia-container form label{
+    font-size: 22px;
+}
+#transferencia-container form div input{
+    /*margin: auto;*/
+}
+.btnTransferir{
+    background-color: #9ACD32;
+    padding: 5px;
+    width: 100px;
+    font-size: 18px;
+    border-radius: 6px;
+}
 
 
 
