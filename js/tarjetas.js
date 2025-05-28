@@ -6,7 +6,7 @@ serán creadas en HTML.
 // Contenedor de todas las tarjetas
 const tarjets_container = document.getElementsByClassName("all-tarjets")[0];
 let tarjetas = []; // Variable donde almacenaremos las tarjetas
-
+let numerosTarjetasUsuario=[]; 
 // Fetch para obtener las tarjetas del servidor
 fetch("http://localhost/JavaScript/ProyectosPersonales/Banco/tarjetas.php")
   .then(response => response.json())
@@ -24,7 +24,7 @@ const cargarTarjetas = () => {
   tarjetas.forEach((tarjeta, index) => {
     const tarjetaDiv = document.createElement("div");
     tarjetaDiv.classList.add("tarjets");
-    tarjeta["estado"]=="Expirada"?tarjetaDiv.classList.add("expiradas"):null;
+    tarjeta["estado"]=="Expirada"?tarjetaDiv.classList.add("expiradas"):numerosTarjetasUsuario.push(tarjeta["numeroTarjeta"]);
     tarjetaDiv.id = `tarjeta-${tarjeta.idTarjeta}`; // ID único para cada tarjeta
 
     tarjetaDiv.innerHTML = `
@@ -60,3 +60,4 @@ const formatearFecha = (fechaStr) => {
 const generarCVV = (id) => {
   return String((id * 77) % 900 + 100); // resultado entre 100 y 999
 };
+

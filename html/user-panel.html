@@ -157,10 +157,12 @@
 
     <div id="transferencia-container">
         <h2>Transferir</h2>
-        <form method="post" action="#" class="form-transferencia">
+        <form id="form-transferir" method="post" action="#" class="form-transferencia">
             <div>
                 <label>Desde:</label>
-                <input type="search" placeholder="Numero de cuenta" required>
+                <select id="select-tarjetas-user">
+                    <option>sda</option>
+                </select>
             </div>
             <div>
                 <label>Hacia:</label>
@@ -192,5 +194,6 @@
     }
   </script>
   <script src="../js/tarjetas.js"></script>
+  <script src="../js/transferir.js"></script>
 </body>
 </html>
